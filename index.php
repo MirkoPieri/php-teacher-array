@@ -33,18 +33,18 @@
                 ]
             ];
 
-            foreach ($db as $key => $value) {
-              foreach ($value as $persone) {
+            foreach ($db as $key => $value) { //Primo for per dividere teachers da pm
+              foreach ($value as $persone) { //Secondo for per estrarre nome e cognome
                 $name = $persone['name'];
                 $lastname = $persone['lastname'];
 
-                if ($key === 'teachers') {
+                if ($key === 'teachers') { //If per inserire insegnanti
                   echo "<div class='gray'>
                           <h2>".$key."</h2>
                           <p>".$name."<p>
                           <p>".$lastname."<p>
                         </div>";
-                } else if ($key === 'pm') {
+                } else if ($key === 'pm') { //if per inserire pm
                   echo "<div class='green'>
                           <h2>".$key."</h2>
                           <p>".$name."<p>
