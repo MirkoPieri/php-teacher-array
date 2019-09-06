@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+div.gray {
+  width: 25%;
+  padding: 50px;
+  background-color: gray;
+}
+
+div.green {
+  width: 25%;
+  padding: 50px;
+  background-color: green;
+}
+
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30pt;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: 22pt;
+  padding-bottom: 10px;
+  color: white;
+}

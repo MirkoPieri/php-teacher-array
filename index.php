@@ -33,6 +33,29 @@
                 ]
             ];
 
+            foreach ($db as $key => $value) {
+              foreach ($value as $persone) {
+                $name = $persone['name'];
+                $lastname = $persone['lastname'];
+
+                if ($key === 'teachers') {
+                  echo "<div class='gray'>
+                          <h2>".$key."</h2>
+                          <p>".$name."<p>
+                          <p>".$lastname."<p>
+                        </div>";
+                } else if ($key === 'pm') {
+                  echo "<div class='green'>
+                          <h2>".$key."</h2>
+                          <p>".$name."<p>
+                          <p>".$lastname."<p>
+                        </div>";
+                }
+              }
+
+
+            }
+
         ?>
 
     </main>
